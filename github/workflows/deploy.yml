@@ -22,7 +22,7 @@ jobs:
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-          apiToken: ${{ secrets.CLOUDFARE_API_TOKEN }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: 0121c1dca36530d55a9fdb2ac67f3118
           projectName: sample-site
           directory: dist
